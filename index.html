@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Adriana Rosado - Cuidado em Saúde Mental para Mulheres</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Carregamento da fonte personalizada BogueSlab */
+        @font-face {
+            font-family: 'BogueSlab-BoldItalic';
+            /* IMPORTANTE: Substitua a URL abaixo pelo caminho onde seus arquivos de fonte estão hospedados. */
+            src: url('URL_DA_SUA_FONTE/BogueSlab-BoldItalic.woff2') format('woff2'),
+                 url('URL_DA_SUA_FONTE/BogueSlab-BoldItalic.woff') format('woff');
+            font-weight: normal; /* O peso e estilo já estão no nome da fonte, então definimos como normal aqui */
+            font-style: normal;
+        }
+
+        /* Aplicando a fonte Inter como padrão para o corpo */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Classe de utilidade para aplicar a fonte BogueSlab */
+        .font-bogue {
+            font-family: 'BogueSlab-BoldItalic', serif; /* 'serif' é uma fonte de fallback */
+        }
+    </style>
+
+    <!-- Configuração de cores personalizadas do Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'petrol-blue': '#192a56', // Azul petróleo exato do PDF
+                        'light-blue': '#e0f2fe', // Azul claro, cor de apoio
+                        'brand-gray': '#374151', // Cinza para textos
+                        'light-gray': '#f9fafb', // Cinza bem claro para fundos
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+
+    <!-- Seção 1: Herói (Introdução) -->
+    <header class="bg-light-gray">
+        <div class="container mx-auto px-6 py-16 md:py-24">
+            <!-- Flex container com ordem normal em telas maiores e texto primeiro em mobile -->
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Coluna de Texto -->
+                <div class="md:w-1/2 text-center md:text-left">
+                    <!-- O tamanho da fonte foi aumentado para text-5xl e md:text-6xl -->
+                    <h1 class="text-5xl md:text-6xl font-extrabold text-petrol-blue leading-tight font-bogue">
+                        Saúde mental com <span class="text-sky-600">escuta real.</span>
+                    </h1>
+                    <p class="mt-4 text-lg text-brand-gray">
+                        Atendimento médico exclusivo para mulheres, com foco em saúde mental, acolhimento, técnica e o respeito que você merece.
+                    </p>
+                    <a href="https://wa.me/553398440808?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20marcar%20uma%20consulta%21" target="_blank" class="mt-8 inline-block bg-petrol-blue text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-opacity-90 transition-colors duration-300">
+                        Agendar minha consulta
+                    </a>
+                </div>
+                <!-- Coluna de Imagem -->
+                <div class="md:w-1/2">
+                    <img src="/Fotoadriana.png" alt="Foto da Dra. Adriana Rosado" class="rounded-lg w-full max-w-sm md:max-w-md mx-auto">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção 2: Vídeo (Conexão Emocional) -->
+    <section id="video" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-petrol-blue">Por que um cuidado especializado?</h2>
+            <p class="mt-4 max-w-3xl mx-auto text-brand-gray text-base md:text-lg">
+                Assista ao vídeo e entenda como uma abordagem focada na mulher pode transformar sua jornada de cuidado.
+            </p>
+             <div class="mt-8 max-w-4xl mx-auto aspect-video bg-gray-200 rounded-lg shadow-xl overflow-hidden">
+                <!-- Vídeo do YouTube incorporado com iframe -->
+                <!-- IMPORTANTE: Troque 'SEU_ID_DO_VIDEO_AQUI' pelo código do seu vídeo no YouTube -->
+                <iframe 
+                    class="w-full h-full" 
+                    src="https://www.youtube.com/embed/P9t4OwiL0V8?" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+        </div>
+    </section>
+
+    <!-- Seção 3: A Dor (Gatilho de Identificação) - CÓDIGO CORRIGIDO -->
+    <section class="relative bg-petrol-blue text-white overflow-hidden">
+        <!-- Imagem de fundo na metade direita (visível apenas em telas grandes) -->
+        <div class="absolute top-0 right-0 h-full w-1/2 hidden md:block">
+            <img src="fto2.png" alt="Mulher recebendo apoio" class="w-full h-full object-contain">
+        </div>
+
+        <!-- Padding inferior removido no mobile (pb-0) e mantido no desktop (md:py-24) -->
+        <div class="relative container mx-auto px-6 pt-16 pb-0 md:py-24">
+            <div class="flex">
+                <!-- Coluna de Texto (ocupa metade da tela em desktop para não ficar sobre a imagem) -->
+                <div class="w-full md:w-1/2 text-center md:text-left">
+                    <h2 class="text-3xl md:text-4xl font-extrabold leading-snug">Você sente que está carregando o mundo sozinha?</h2>
+                    <p class="mt-4 text-lg opacity-90">
+                        Se a luta silenciosa contra a ansiedade e o esgotamento se tornou parte da sua rotina, saiba que não precisa ser assim. Aqui, você encontra um cuidado sem julgamentos e um tratamento com propósito.
+                    </p>
+                    <a href="https://wa.me/553398440808?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20marcar%20uma%20consulta%21" target="_blank" class="mt-8 inline-block bg-white text-petrol-blue font-semibold py-3 px-8 rounded-lg hover:bg-light-blue transition-colors duration-300">
+                        Quero encontrar meu equilíbrio
+                    </a>
+                </div>
+            </div>
+            <!-- Imagem separada para mobile, para garantir boa visualização -->
+            <div class="md:hidden mt-12">
+                 <!-- A classe 'block' foi adicionada para remover o espaçamento inferior da imagem -->
+                 <img src="fto2.png" alt="Mulher recebendo apoio" class="w-full max-w-sm mx-auto block">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Seção 4: Diferenciais (A Solução) -->
+    <section class="py-16 md:py-24 bg-light-gray">
+        <div class="container mx-auto px-6">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-petrol-blue">Um cuidado que realmente entende você</h2>
+                <p class="mt-4 max-w-3xl mx-auto text-brand-gray text-base md:text-lg">Nossa abordagem é construída sobre pilares que garantem um tratamento eficaz, humano e seguro.</p>
+            </div>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Cards de Diferenciais -->
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="inline-block p-3 bg-light-blue rounded-full">
+                        <svg class="w-8 h-8 text-petrol-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="mt-4 text-xl font-bold text-petrol-blue">+10 anos de experiência</h3>
+                    <p class="mt-2 text-brand-gray">Uma década de prática clínica dedicada à saúde mental, garantindo um diagnóstico preciso e um tratamento eficaz.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="inline-block p-3 bg-light-blue rounded-full">
+                        <!-- Ícone corrigido para 'Atendimento feminino' (usuária) -->
+                        <svg class="w-8 h-8 text-petrol-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+                    </div>
+                    <h3 class="mt-4 text-xl font-bold text-petrol-blue">Atendimento feminino</h3>
+                    <p class="mt-2 text-brand-gray">Um espaço seguro e exclusivo para mulheres, onde suas questões são compreendidas com profundidade e empatia.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="inline-block p-3 bg-light-blue rounded-full">
+                        <!-- Ícone corrigido para 'Consultório acolhedor' (escudo de segurança) -->
+                        <svg class="w-8 h-8 text-petrol-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                    </div>
+                    <h3 class="mt-4 text-xl font-bold text-petrol-blue">Consultório acolhedor</h3>
+                    <p class="mt-2 text-brand-gray">Localizado em Governador Valadares, em um ambiente discreto e projetado para o seu conforto e privacidade.</p>
+                </div>
+                 <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="inline-block p-3 bg-light-blue rounded-full">
+                        <svg class="w-8 h-8 text-petrol-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <h3 class="mt-4 text-xl font-bold text-petrol-blue">Abordagem empática</h3>
+                    <p class="mt-2 text-brand-gray">Acreditamos na escuta real. Nossas consultas são mais longas para que sua história seja ouvida com atenção.</p>
+                </div>
+                 <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="inline-block p-3 bg-light-blue rounded-full">
+                        <svg class="w-8 h-8 text-petrol-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="mt-4 text-xl font-bold text-petrol-blue">Agenda limitada</h3>
+                    <p class="mt-2 text-brand-gray">Para manter a alta qualidade do atendimento, o número de consultas é limitado, garantindo dedicação total a cada paciente.</p>
+                </div>
+                 <div class="bg-white p-8 rounded-lg shadow-md text-center">
+                    <div class="inline-block p-3 bg-light-blue rounded-full">
+                        <svg class="w-8 h-8 text-petrol-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="mt-4 text-xl font-bold text-petrol-blue">Tratamento com propósito</h3>
+                    <p class="mt-2 text-brand-gray">Vamos além dos sintomas para encontrar a raiz dos problemas, construindo um caminho de bem-estar duradouro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 5: CTA Final -->
+    <section id="cta" class="bg-light-blue py-16 md:py-24">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-petrol-blue">Chega de adiar o seu bem-estar.</h2>
+            <p class="mt-4 max-w-2xl mx-auto text-lg text-brand-gray">
+                Dar o primeiro passo exige coragem, mas é a decisão mais importante que você pode tomar por si mesma. Permita-se ser cuidada com a profundidade que você merece.
+            </p>
+            <a href="https://wa.me/553398440808?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20marcar%20uma%20consulta%21" target="_blank" class="mt-8 inline-block bg-petrol-blue text-white font-bold py-4 px-10 rounded-lg shadow-lg hover:bg-opacity-90 transition-colors duration-300 text-lg">
+                Falar com a Dra. Adriana agora
+            </a>
+            <p class="mt-4 text-sm text-brand-gray">Clique para agendar sua consulta via WhatsApp.</p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-petrol-blue text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p class="font-bold text-xl">Dra. Adriana Rosado</p>
+            <p class="text-sm opacity-80">Cuidado em Saúde Mental</p>
+            <p class="mt-4 text-sm opacity-80">
+                Av. Minas Gerais, 883 - Sala 05 - Centro, Gov. Valadares - MG, 35010-151
+            </p>
+            <p class="mt-8 text-xs opacity-60">&copy; 2025 Dra. Adriana Rosado. Todos os direitos reservados. Feito pela agência ASA.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
